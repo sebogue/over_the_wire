@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Over the wire bandit — Writeups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/tomorrow-night.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <header class="sidebar__header">
+      <div class="sidebar__mark">Bandit</div>
+      <div class="sidebar__count" id="challenge-count"></div>
+    </header>
+    <nav class="log" id="log-list" aria-label="Liste des challenges"></nav>
+  </aside>
+
+  <main class="viewer">
+    <article class="entry" id="entry">
+      <h1 class="entry__title" id="entry-title"></h1>
+      <div class="entry__body" id="entry-body"></div>
+
+      <footer class="entry__nav">
+        <button id="btn-prev" class="navbtn" type="button">
+          <span class="navbtn__arrow">‹</span> précédent
+        </button>
+        <span class="entry__index" id="entry-index"></span>
+        <button id="btn-next" class="navbtn" type="button">
+          suivant <span class="navbtn__arrow">›</span>
+        </button>
+      </footer>
+    </article>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
