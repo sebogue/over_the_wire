@@ -25,8 +25,7 @@ $form .= '</form>';
 
 Puis la seconde page qui print les credentials quand admin = 1 est présent dans la session php:
 ```php
-
-function print_credentials() { /* {{{ */
+function print_credentials() {
     if($_SESSION and array_key_exists("admin", $_SESSION) and $_SESSION["admin"] == 1) {
     print "You are an admin. The credentials for the next level are:<br>";
     print "<pre>Username: natas22\n";
